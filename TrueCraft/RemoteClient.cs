@@ -477,7 +477,7 @@ namespace TrueCraft
             Server.Scheduler.ScheduleEvent("client.finalize-chunks", this,
                 TimeSpan.Zero, server =>
                 {
-                    return;
+                    return;   // Обнаружен недостижимый код
                     LoadedChunks.Add(chunk.Coordinates);
                     foreach (var kvp in chunk.TileEntities)
                     {
